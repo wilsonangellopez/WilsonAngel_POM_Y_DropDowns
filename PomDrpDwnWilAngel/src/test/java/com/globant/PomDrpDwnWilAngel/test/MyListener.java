@@ -19,6 +19,6 @@ public class MyListener implements ITestListener {
 
 	public void onStart(ITestContext context) {System.out.println("Aqui empezo La suite: " + context.getName());	}
 
-	public void onFinish(ITestContext context) {System.out.println("Aqui finalizo La Suite: " + context.getName());}
+	public void onFinish(ITestContext context) {System.out.println("Aqui finalizo La Suite: " + context.getName()); }
 
 }

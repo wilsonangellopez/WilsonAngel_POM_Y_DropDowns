@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Test_suite_for_chrome">
-                    <span>C:\Users\wilson.angel\Documents\Globant\Carrera TAE\Curso Tae Peru\Pom-DrpDwn\WilsonAngel_POM_Y_DropDowns\PomDrpDwnWilAngel\src\test\java\com\globant\PomDrpDwnWilAngel\suites\SuiteDrpDwnFireFox.xml</span>
+                    <span>C:\Users\wilson.angel\Documents\Globant\Carrera TAE\Curso Tae Peru\Pom-DrpDwn\WilsonAngel_POM_Y_DropDowns\PomDrpDwnWilAngel\src\test\java\com\globant\PomDrpDwnWilAngel\suites\SuiteMulitiSelectChrome.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Test_suite_for_chrome">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_for_chrome" title="com.globant.PomDrpDwnWilAngel.test.DrpDwnTest" hash-for-method="DrpDwnOne">DrpDwnOne</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_for_chrome" title="com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest" hash-for-method="selectOneState(Texas)">selectOneState(Texas)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_suite_for_chrome -->
@@ -120,14 +120,15 @@
           <div class="suite-Test_suite_for_chrome-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.globant.PomDrpDwnWilAngel.test.DrpDwnTest</span>
+              <span class="class-name">com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DrpDwnOne">
-                  </a> <!-- DrpDwnOne -->
-                  <span class="method-name">DrpDwnOne</span>
+                  <a name="selectOneState(Texas)">
+                  </a> <!-- selectOneState(Texas) -->
+                  <span class="method-name">selectOneState</span>
+                  <span class="parameters">(Texas)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,17 +136,20 @@
         </div> <!-- panel Test_suite_for_chrome -->
         <div panel-name="test-xml-Test_suite_for_chrome" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\wilson.angel\Documents\Globant\Carrera TAE\Curso Tae Peru\Pom-DrpDwn\WilsonAngel_POM_Y_DropDowns\PomDrpDwnWilAngel\src\test\java\com\globant\PomDrpDwnWilAngel\suites\SuiteDrpDwnFireFox.xml</span>
+            <span class="header-content">C:\Users\wilson.angel\Documents\Globant\Carrera TAE\Curso Tae Peru\Pom-DrpDwn\WilsonAngel_POM_Y_DropDowns\PomDrpDwnWilAngel\src\test\java\com\globant\PomDrpDwnWilAngel\suites\SuiteMulitiSelectChrome.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test suite for chrome&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.globant.PomDrpDwnWilAngel.test.MyListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test init Session&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.globant.PomDrpDwnWilAngel.test.DrpDwnTest&quot;/&gt;
+      &lt;class name=&quot;com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test init Session --&gt;
 &lt;/suite&gt; &lt;!-- Test suite for chrome --&gt;
@@ -187,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DrpDwnOne')
-data.setCell(0, 2, 'com.globant.PomDrpDwnWilAngel.test.DrpDwnTest')
-data.setCell(0, 3, 12);
+data.setCell(0, 1, 'selectOneState')
+data.setCell(0, 2, 'com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest')
+data.setCell(0, 3, 313);
 window.suiteTableData['Test_suite_for_chrome']= { tableData: data, tableDiv: 'times-div-Test_suite_for_chrome'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 313 ms</span>
               <div id="times-div-Test_suite_for_chrome">
               </div> <!-- times-div-Test_suite_for_chrome -->
             </div> <!-- times-div -->
@@ -220,15 +224,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.globant.PomDrpDwnWilAngel.test.DrpDwnTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">beforeSuite(firefox)</span>
+                <span class="method-name">beforeSuite(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5744 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">DrpDwnOne</span>
-                <span class="method-start">28649 ms</span>
+                <span class="method-name">selectOneState(Texas)</span>
+                <span class="method-start">5794 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">6109 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

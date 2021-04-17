@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Test suite for chrome]">
-  <parameter name="browser" value="firefox"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.globant.PomDrpDwnWilAngel.test.MyListener"/>
+  </listeners>
   <test thread-count="5" name="Test init Session(failed)">
     <classes>
-      <class name="com.globant.PomDrpDwnWilAngel.test.DrpDwnTest">
+      <class name="com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="DrpDwnOne"/>
+          <include name="selectOneState" invocation-numbers="0"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.globant.PomDrpDwnWilAngel.test.DrpDwnTest -->
+      </class> <!-- com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest -->
     </classes>
   </test> <!-- Test init Session(failed) -->
 </suite> <!-- Failed suite [Test suite for chrome] -->
