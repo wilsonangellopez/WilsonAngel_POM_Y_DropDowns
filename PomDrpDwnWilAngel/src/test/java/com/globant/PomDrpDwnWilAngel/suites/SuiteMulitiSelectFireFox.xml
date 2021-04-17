@@ -3,8 +3,7 @@
 <listeners>
 		<listener class-name="com.globant.PomDrpDwnWilAngel.test.MyListener"></listener>
 	</listeners>
-	<parameter name="browser" value="firefox"></parameter>
-	
+	<parameter name="browser" value="firefox"></parameter>	
 	<test name="Test init Session">
 		<classes>
  			<class name="com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest"></class> 

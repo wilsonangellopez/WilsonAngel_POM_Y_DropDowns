@@ -16,6 +16,11 @@ public class BasePage {
 	private WebDriver driver;
 	private WebDriverWait wait;
 
+	/**
+	 * Base page with common methods
+	 * @param pDriver
+	 */
+
 	public BasePage(WebDriver pDriver){
 
 		PageFactory.initElements(pDriver, this);
@@ -24,18 +29,46 @@ public class BasePage {
 
 	}
 
+	/**
+	 * Method to allow to selenium get explicits Waits
+	 * @return: wait
+	 */
 	public WebDriverWait getWait(){return wait;}
 
+	/**
+	 * Get driver selenium
+	 * @return: driver
+	 */
 	protected WebDriver getDriver() {return driver;}	
+
+
+
+	/**
+	 * Method to wait a element to be visible
+	 * @param element
+	 */
 
 	public  void findElementVisible(String element) {
 		getWait().until(ExpectedConditions.visibilityOf(getDriver().findElement(By.cssSelector(element))));
 	}
 
+	/**
+	 * Generic Method to get text from a web element
+	 * @param element
+	 * @return String
+	 */
+
 	public String getText(String element) {
 		getWait().until(ExpectedConditions.visibilityOf(getDriver().findElement(By.cssSelector(element))));
 		return  getDriver().findElement(By.cssSelector(element)).getText();
 	}
+
+
+	/**
+	 * Generic Method to get text from a web element
+	 * @param element
+	 * @return String
+	 */
 
 	public String getText(WebElement element) {
 
@@ -49,6 +82,13 @@ public class BasePage {
 
 		return str;
 	}
+
+	/**
+	 * Generic Method to get text from a web element
+	 * @param element
+	 * @param option
+	 * @return
+	 */
 
 	public String getText(WebElement element, String option) {
 
@@ -76,13 +116,22 @@ public class BasePage {
 
 	}
 
-
+	/**
+	 * Generic Method to compare text
+	 * @param obtain
+	 * @param expected
+	 * @return
+	 */
 	public boolean validateText(String obtain, String expected) {
 
 		return obtain.equalsIgnoreCase(expected)?true:false;
 	}
 
-
+	/**
+	 * Generic Method to select a list or multi select web element
+	 * @param element
+	 * @param state
+	 */
 	public void selectGenericList(WebElement element, String state) {
 
 		getWait().until(ExpectedConditions.elementToBeClickable(element));
@@ -92,7 +141,9 @@ public class BasePage {
 
 	}
 
-
+	/**
+	 * Kill driver
+	 */
 	public void dispose() {
 
 		if(driver!=null) {

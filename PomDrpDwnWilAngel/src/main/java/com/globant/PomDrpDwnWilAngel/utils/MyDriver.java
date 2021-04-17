@@ -16,7 +16,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class MyDriver {
 
 	private WebDriver driver;
-
+/**
+ * Constructor to set up chrome and firefox driver
+ * @param browser
+ */
 	public MyDriver(String browser) {
 
 
