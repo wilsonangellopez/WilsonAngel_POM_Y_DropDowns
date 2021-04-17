@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test suite for chrome" duration-ms="369" started-at="2021-04-17T02:29:03Z" finished-at="2021-04-17T02:29:03Z">
+  <suite name="Test suite for chrome" duration-ms="414" started-at="2021-04-17T05:02:26Z" finished-at="2021-04-17T05:02:26Z">
     <groups>
     </groups>
-    <test name="Test init Session" duration-ms="369" started-at="2021-04-17T02:29:03Z" finished-at="2021-04-17T02:29:03Z">
+    <test name="Test init Session" duration-ms="414" started-at="2021-04-17T05:02:26Z" finished-at="2021-04-17T05:02:26Z">
       <class name="com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@39c0f4a]" name="beforeSuite" is-config="true" duration-ms="5742" started-at="2021-04-17T02:28:57Z" finished-at="2021-04-17T02:29:03Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@1a968a59]" name="beforeSuite" is-config="true" duration-ms="5763" started-at="2021-04-17T05:02:20Z" finished-at="2021-04-17T05:02:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@39c0f4a]" name="setUp" is-config="true" duration-ms="33" started-at="2021-04-17T02:29:03Z" finished-at="2021-04-17T02:29:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@1a968a59]" name="setUp" is-config="true" duration-ms="39" started-at="2021-04-17T05:02:26Z" finished-at="2021-04-17T05:02:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectOneState(java.lang.String)[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@39c0f4a]" name="selectOneState" duration-ms="313" started-at="2021-04-17T02:29:03Z" data-provider="myData" finished-at="2021-04-17T02:29:03Z">
+        <test-method status="PASS" signature="selectOneDay(java.lang.String)[pri:1, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@1a968a59]" name="selectOneDay" duration-ms="356" started-at="2021-04-17T05:02:26Z" data-provider="dayToSend" finished-at="2021-04-17T05:02:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Texas]]>
+                <![CDATA[Monday]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectOneState -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@39c0f4a]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-17T02:29:03Z" finished-at="2021-04-17T02:29:03Z">
+        </test-method> <!-- selectOneDay -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest@1a968a59]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-17T05:02:26Z" finished-at="2021-04-17T05:02:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

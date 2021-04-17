@@ -10,7 +10,8 @@
       <class name="com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="selectOneState" invocation-numbers="0"/>
+          <include name="selectOneDay" invocation-numbers="0"/>
+          <include name="setUp"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.globant.PomDrpDwnWilAngel.test.MulitiSelectTest -->
