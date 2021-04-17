@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test suite for chrome]">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test init Session(failed)">
+    <classes>
+      <class name="com.globant.PomDrpDwnWilAngel.test.DrpDwnTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="DrpDwnOne"/>
+        </methods>
+      </class> <!-- com.globant.PomDrpDwnWilAngel.test.DrpDwnTest -->
+    </classes>
+  </test> <!-- Test init Session(failed) -->
+</suite> <!-- Failed suite [Test suite for chrome] -->
